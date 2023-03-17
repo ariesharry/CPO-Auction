@@ -7,9 +7,10 @@ import PlusIcon from '@heroicons/react/24/solid/PlusIcon';
 import { Box, Button, Container, Stack, SvgIcon, Typography } from '@mui/material';
 import { useSelection } from 'src/hooks/use-selection';
 import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
-import { CustomersTable } from 'src/sections/customer/customers-table';
-import { CustomersSearch } from 'src/sections/customer/customers-search';
+import { CustomersTable } from 'src/sections/commodity/customers-table';
+import { CustomersSearch } from 'src/sections/commodity/customers-search';
 import { applyPagination } from 'src/utils/apply-pagination';
+import { CommodityForm } from 'src/sections/commodity/commodity-form';
 
 const now = new Date();
 
@@ -199,7 +200,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Customers | Devias Kit
+          Add Commodity | Add Commodity Auction System
         </title>
       </Head>
       <Box
@@ -218,9 +219,9 @@ const Page = () => {
             >
               <Stack spacing={1}>
                 <Typography variant="h4">
-                  Customers
+                  Add Commodity
                 </Typography>
-                <Stack
+                {/* <Stack
                   alignItems="center"
                   direction="row"
                   spacing={1}
@@ -245,7 +246,7 @@ const Page = () => {
                   >
                     Export
                   </Button>
-                </Stack>
+                </Stack> */}
               </Stack>
               <div>
                 <Button
@@ -261,6 +262,14 @@ const Page = () => {
               </div>
             </Stack>
             <CustomersSearch />
+            <CommodityForm />
+            {/* <Grid
+                xs={12}
+                md={6}
+                lg={8}
+              >
+                <CommodityForm />
+            </Grid> */}
             <CustomersTable
               count={data.length}
               items={customers}

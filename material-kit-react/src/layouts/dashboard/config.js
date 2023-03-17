@@ -5,12 +5,13 @@ import ShoppingBagIcon from '@heroicons/react/24/solid/ShoppingBagIcon';
 import UserIcon from '@heroicons/react/24/solid/UserIcon';
 import UserPlusIcon from '@heroicons/react/24/solid/UserPlusIcon';
 import UsersIcon from '@heroicons/react/24/solid/UsersIcon';
+import PlusIcon from '@heroicons/react/24/solid/PlusIcon';
 import XCircleIcon from '@heroicons/react/24/solid/XCircleIcon';
 import { SvgIcon } from '@mui/material';
 
 export const items = [
   {
-    title: 'Overview',
+    title: 'Dashboard',
     path: '/',
     icon: (
       <SvgIcon fontSize="small">
@@ -19,16 +20,16 @@ export const items = [
     )
   },
   {
-    title: 'Customers',
+    title: 'Add Commodity',
     path: '/customers',
     icon: (
       <SvgIcon fontSize="small">
-        <UsersIcon />
+        <PlusIcon />
       </SvgIcon>
     )
   },
   {
-    title: 'Companies',
+    title: 'My Auction',
     path: '/companies',
     icon: (
       <SvgIcon fontSize="small">

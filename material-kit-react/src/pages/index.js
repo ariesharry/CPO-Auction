@@ -17,7 +17,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Overview | Devias Kit
+        Dashboard | Auction System
       </title>
     </Head>
     <Box
