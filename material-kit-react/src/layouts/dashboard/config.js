@@ -8,6 +8,7 @@ import UsersIcon from '@heroicons/react/24/solid/UsersIcon';
 import PlusIcon from '@heroicons/react/24/solid/PlusIcon';
 import XCircleIcon from '@heroicons/react/24/solid/XCircleIcon';
 import { SvgIcon } from '@mui/material';
+import BuildingOffice2Icon from '@heroicons/react/24/solid/BuildingOffice2Icon'
 
 export const items = [
   {
@@ -74,11 +75,11 @@ export const items = [
     )
   },
   {
-    title: 'Error',
+    title: 'PKS Profile',
     path: '/404',
     icon: (
       <SvgIcon fontSize="small">
-        <XCircleIcon />
+        <BuildingOffice2Icon />
       </SvgIcon>
     )
   }
